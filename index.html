@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camden Renders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+
+<!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+<!-- CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+
+    <div class="grid_container">
+    
+        <!-- MENU -->
+
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png" alt="CAMDEN RENDERS">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./pages/cursos.html">Cursos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- PRINCIPAL -->
+
+        <main>
+
+            <div class="titulo1_1">
+                <h1>Visualizacion arquitectonica</h1>
+            </div>
+
+            <div class="boton_flecha">
+                <a href="#quienes_somos">
+                    <img src="./img/flecha.png" alt="flecha">
+                </a>
+            </div>
+
+            <div class="imagen1_1">
+                <img src="./img/portada_home.jpg" alt="edificio">
+            </div>
+
+        </main>
+
+
+        <!-- SECUNDARIO -->
+
+        <section class="seccion1" id="quienes_somos">
+            <article>
+                <h2 class="titulo2">¿Quienes somos?</h2>
+                <p class="texto2">Somos un estudio de Visualización 3D donde brindamos servicios de renderizado y animaciones 3D para arquitectos, diseñadores, ingenieros, desarrolladores inmobiliarios, haciendo foco en la atención personalizada.</p>
+            </article>
+        </section>
+
+
+        <section class="seccion2">
+            <article>
+                <h2 class="titulo2">Servicios</h2>
+            </article>
+            <div>
+                <ul class="lista_servicios">
+                    <li>
+                        <div>
+                            <img src="./img/icono-render.png" alt="Icono render">
+                        </div>
+                        <div>
+                            <h3 class="titulo3">3D RENDERING</h3>
+                            <p class="texto3">Los renders fotorrealistas te permitirán visualizar tus proyectos.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="./img/icono-video.png" alt="Icono video">
+                        </div>
+                        <div>
+                            <h3 class="titulo3">ANIMACIONES 3D</h3>
+                            <p class="texto3">Los videos 3D te ayudarán a recorrer los espacios de tu proyecto.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="./pages/servicios.html"><input type="button" value="CONOCE MAS" class="boton" id="botones"></a>
+            </div>
+        </section>
+
+
+        <section class="seccion3">
+             <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/exterior1.jpg" class="d-block w-100 imagen3" alt="Edificios">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/exterior6.jpg" class="d-block w-100 imagen3" alt="acceso">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/interior7.jpg" class="d-block w-100 imagen3" alt="interior">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <article>
+                <div>
+                    <a href="./pages/portfolio.html"><input type="button" value="VER PORTFOLIO" class="boton" id="botones"></a>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="seccion4">
+            <article>
+                <h2 class="titulo2" id="titulo2">Hace tus proyectos realidad</h2>
+                <div>
+                    <a href="./pages/contacto.html"><input type="button" value="CONTACTANOS" class="boton" id="boton_contactanos"></a>
+                </div>
+            </article>
+            <div class="imagen1"> 
+                <img src="./img/portada_home2.jpg" alt="Render interior">
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <ul class="footer">
+                <li class="redes">
+                    <a href="https://www.instagram.com/camden.renders/">
+                        <img src="./img/icono-ig.png" alt="Instagram">
+                    </a>
+                </li>
+                <li class="redes">
+                    <a href="https://mail.google.com/">
+                        <img src="./img/icono-correo.png" alt="Correo">
+                    </a>
+                </li>
+                <li class="redes">
+                    <a href="https://www.facebook.com/camden.renders">
+                        <img src="./img/icono-face.png" alt="Facebook">
+                    </a>
+                </li>
+                <li class="redes">
+                    <a href="https://web.whatsapp.com/">
+                        <img src="./img/icono-whatsapp.png" alt="Whatsapp">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+
+    
+<!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
