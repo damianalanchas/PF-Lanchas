@@ -96,8 +96,6 @@ ul{
 }
 
 
-
-
 header{
     grid-area: header;
     display: flex;
@@ -140,7 +138,6 @@ footer{
     font-family: 'Antonio';
     font-size: 2rem;
     color: #4b4b4b;
-    margin-left: 60%;
 }
 
 #menu2{
@@ -501,14 +498,9 @@ footer{
 
 @media (max-width: 768px) {
 
-
-
 header{
     width: 100%;
-
 }
-
-
 
 main{
     width: 100%;
@@ -543,6 +535,14 @@ footer{
     font-size: 2rem;
 }
 
+h1{
+    font-size: 3rem;
+}
+
+.titulo1{
+    top: 20%;
+    left: 40%;
+}
 
 
 
