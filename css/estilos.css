@@ -512,18 +512,34 @@ footer{
 
 .seccion1{
     width: 100vw;
+    padding: 50px;
+    height: 50vh;
+    padding-top: 70px;
+
 }
 
-.section2{
+.seccion2{
+    width: 100vw;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.seccion3{
     width: 100vw;
 }
 
-.section3{
+.seccion4{
     width: 100vw;
 }
 
-.section4{
+
+
+.seccion7{
     width: 100vw;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .grid_container4{
@@ -538,12 +554,17 @@ footer{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .titulo1{
     top: 20%;
-    left: 40%;
+    left: 30%;
+}
+
+.titulo1_1{
+    top: 20%;
+    left: 25%;
 }
 
 .lista_servicios_completa1{
@@ -567,8 +588,6 @@ h1{
 .lista_servicios_completa2 img{
     height: 120px;
 }
-
-
 .grid_container3{
     display: flex;
     flex-direction: column;
@@ -579,11 +598,11 @@ h1{
 }
 
 .titulo3{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .texto3{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .texto4{
@@ -591,6 +610,58 @@ h1{
     padding-right: 5px;
 }
 
+.titulo2{
+    font-size: 3rem;
+}
+
+.formulario{
+    width: 400px;
+}
+
+#boton_formulario{
+    margin: 30px;
+}
+
+.titulo5{
+    font-size: 2.5rem;
+}
+
+.imagenes_portfolio{
+    grid-template-columns: 1fr;
+    width: 100vw;
+}
+
+.boton_flecha{
+    top: 26%;
+    left: 45%;
+}
+
+.boton_flecha img{
+    height: 60px;
+}
+
+.texto2{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#boton_conocemas{
+    margin-top: 10px;
+}
+
+#boton_verportfolio{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagen1{
+    width: 100vw;
+}
+
+.imagen1_1 img{
+    width: 100vw;
+}
 
 
 
