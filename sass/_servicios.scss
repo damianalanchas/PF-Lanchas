@@ -1,2 +1,111 @@
 @use './variables.scss';
 
+.grid_container_servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas:
+        "header"
+        "main"
+        "seccion"
+        "footer";
+    header{
+        grid-area: header;
+        width: variables.$width_header;
+        height: variables.$height_header;
+        background-color: variables.$background_color_1;
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        .logo img{
+            width: variables.$width_logo;
+            margin-left: variables.$margin_left_logo;
+            margin-top: variables.$margin_top_logo;
+        }
+        .menu{
+            font-family: variables.$font_family_menu;
+            font-size: variables.$font_size_menu;
+            color: variables.$font_color_menu;
+        }
+        #menu2{
+            padding-left: variables.$padding_left_menu2;
+        }
+    }
+    main{
+        grid-area: main;
+        background-image: url(../img/portada_servicios.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: variables.$width_header;
+        h1{
+            font-family: variables.$font_h1;
+            font-size: variables.$size_h1;
+            color: variables.$color_h1;
+            font-weight: variables.$font_weight_h1;
+            text-align: center;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+    section{
+        grid-area: seccion;
+        display: flex;
+        flex-direction: column;
+        li img{
+            height: 200px;
+        }
+        #lista_servicios_left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: variables.$background_color_1;
+            text-align:left;
+            padding: 150px;
+        }
+        #lista_servicios_right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: variables.$background_color_2;
+            text-align:right;
+            padding: 150px;
+        }
+        h3{
+            font-family: variables.$font_h3;
+            font-size: 3.5rem;
+            color: variables.$color_h3;
+            padding-bottom: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        p{
+            font-family: variables.$font_p;
+            color: variables.$color_p;
+            font-size: 2rem;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+    footer{
+        grid-area: footer;
+        width: variables.$width_header;
+        background-color: variables.$background_color_footer;
+        height: variables.$height_footer;
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: variables.$justify_content_footer;
+            align-items: center;
+        }
+        .redes img{
+            height: variables.$height_icono_redes;
+            padding-left: variables.$padding_left_icono_redes;
+            padding-right: variables.$padding_right_icono_redes;
+            margin-top: variables.$margin_top_footer;
+        }
+    }
+}

@@ -9,6 +9,8 @@
     <title>Camden Renders | Servicios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- FUENTES -->
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
 
 <!-- BOOTSTRAP -->
@@ -23,7 +25,7 @@
 
 <!-- MENU -->
    
-    <div>
+    <div class="grid_container_servicios">
         <header>
             <div class="logo">
                 <img src="../img/logo.png" alt="CAMDEN RENDERS">
@@ -34,13 +36,13 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse nav-link" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
-                        <a class="nav-link" href="./servicios.html" id="menu2">Servicios</a>
-                        <a class="nav-link" href="./portfolio.html" id="menu2">Portfolio</a>
-                        <a class="nav-link" href="./cursos.html" id="menu2">Cursos</a>
-                        <a class="nav-link" href="./contacto.html" id="menu2">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
+                            <a class="nav-link" href="./servicios.html" id="menu2">Servicios</a>
+                            <a class="nav-link" href="./portfolio.html" id="menu2">Portfolio</a>
+                            <a class="nav-link" href="./cursos.html" id="menu2">Cursos</a>
+                            <a class="nav-link" href="./contacto.html" id="menu2">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -51,80 +53,74 @@
     <!-- PRINCIPAL -->
 
         <main>
-            <div class="titulo1">
-                <h1>Servicios</h1>
-            </div>
-            <div class="imagen1">
-                <img src="../img/portada_servicios.jpg" alt="Acceso">
-            </div>
+            <h1>Servicios</h1>
         </main>
 
 
     <!-- SECUNDARIO -->
 
-        <section class="grid_container4">
+        <section>
             <div>
                 <ul>
-                    <li class="icono_modelado lista_servicios_completa1">
+                    <li id="lista_servicios_left">
                         <div>
                             <img src="../img/icono-modelado.png" alt="Icono modelado">
                         </div>
                         <div>
-                            <h3 class="titulo4">3D MODELLING</h3>
-                            <p class="texto4">El modelado en 3D nos permite crear un modelo tridiomensional para que puedas visualizar tu proyecto en todas sus dimensiones.</p>
+                            <h3>3D MODELLING</h3>
+                            <p>El modelado en 3D nos permite crear un modelo tridiomensional para que puedas visualizar tu proyecto en todas sus dimensiones.</p>
                         </div>
                     </li>
                     
-                    <li class="icono_render lista_servicios_completa2">
+                    <li id="lista_servicios_right">
                         <div>
-                            <h3 class="titulo4">3D RENDERING</h3>
-                            <p class="texto4">Los renders fotorrealistas son una herramienta esencial que te permitirán visualizar tus proyectos.</p>
-                            <p class="texto4">Nosotros hacemos realidad tus ideas comunicando visualmente a través de estos renders. Mediante distintas imágenes se logra generar mayor claridad sobre el resultado final que tendrá tu proyecto.</p>
+                            <h3>3D RENDERING</h3>
+                            <p>Los renders fotorrealistas son una herramienta esencial que te permitirán visualizar tus proyectos.</p>
+                            <p>Nosotros hacemos realidad tus ideas comunicando visualmente a través de estos renders. Mediante distintas imágenes se logra generar mayor claridad sobre el resultado final que tendrá tu proyecto.</p>
                         </div>
                         <div>
                             <img src="../img/icono-render.png" alt="Icono render">
                         </div>
                     </li>
 
-                    <li class="icono_video lista_servicios_completa1">
+                    <li id="lista_servicios_left">
                         <div>
                             <img src="../img/icono-video.png" alt="Icono video">
                         </div>
                         <div>
-                            <h3 class="titulo4">ANIMACIONES 3D</h3>
-                            <p class="texto4">Movimiento, narrativa y emoción. Viví tu proyecto a través de un recorrido con recursos cinematográficos.</p>
-                            <p class="texto4">Es un formato digital ideal para compartir por redes sociales y publicidad que idealiza la atmósfera del proyecto.</p>
+                            <h3>ANIMACIONES 3D</h3>
+                            <p>Movimiento, narrativa y emoción. Viví tu proyecto a través de un recorrido con recursos cinematográficos.</p>
+                            <p>Es un formato digital ideal para compartir por redes sociales y publicidad que idealiza la atmósfera del proyecto.</p>
                         </div>
                     </li>
 
-                    <li class="icono_3d lista_servicios_completa2">
+                    <li id="lista_servicios_right">
                         <div>
-                            <h3 class="titulo4">3D FLOOR PLANS</h3>
-                            <p class="texto4">Un concepto de plano amigable y de fácil entendimiento para el cliente.</p>
-                            <p class="texto4">Perfecto para unidades inmobiliarias y diseño de viviendas.</p>
+                            <h3>3D FLOOR PLANS</h3>
+                            <p>Un concepto de plano amigable y de fácil entendimiento para el cliente. Perfecto para unidades inmobiliarias y diseño de viviendas.</p>
                         </div>
                         <div>
                             <img src="../img/icono-3d.png" alt="Icono 3d">
                         </div>
                     </li>
 
-                    <li class="icono_360 lista_servicios_completa1">
+                    <li id="lista_servicios_left">
                         <div>
                             <img src="../img/icono-360.png" alt="Icono 360">
                         </div>
                         <div>
-                            <h3 class="titulo4">360° VIRTUAL TOUR</h3>
-                            <p class="texto4">Explorá todo a tu alrededor. El tour virtual te permitirá desplazarte dentro del espacio para que explores tu proyecto.</p>
-                            <p class="texto4">Es un formato digital ideal para compartir por redes sociales y publicidad que idealiza la atmósfera del proyecto.</p>
+                            <h3>360° VIRTUAL TOUR</h3>
+                            <p>Explorá todo a tu alrededor. El tour virtual te permitirá desplazarte dentro del espacio para que explores tu proyecto.</p>
+                            <p>Es un formato digital ideal para compartir por redes sociales y publicidad que idealiza la atmósfera del proyecto.</p>
                         </div>
                     </li>
 
-                    <li class="icono_virtual lista_servicios_completa2">
+                    <li id="lista_servicios_right">
 
                         <div>
-                            <h3 class="titulo4">REAL TIME VR</h3>
-                            <p class="texto4">Interactúa con tu proyecto.</p>
-                            <p class="texto4">Una tendencia en Real Estate, la Realidad Virtual es una experiencia totalmente interactiva en la que vivís tu proyecto imaginado.</p>
+                            <h3>REAL TIME VR</h3>
+                            <p>Interactúa con tu proyecto.</p>
+                            <p>Una tendencia en Real Estate, la Realidad Virtual es una experiencia totalmente interactiva en la que vivís tu proyecto imaginado.</p>
                         </div>
                         <div>
                             <img src="../img/icono-virtual.png" alt="Icono virtual">

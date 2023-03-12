@@ -231,6 +231,322 @@
   height: 65px;
   padding-left: 25px;
   padding-right: 25px;
+  margin-top: 35px;
+}
+
+.grid_container_servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4 1fr);
+  grid-template-areas: "header" "main" "seccion" "footer";
+}
+.grid_container_servicios header {
+  grid-area: header;
+  width: 100%;
+  height: 10vh;
+  background-color: #faf9f7;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.grid_container_servicios header .logo img {
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.grid_container_servicios header .menu {
+  font-family: Antonio;
+  font-size: 2rem;
+  color: #4b4b4b;
+}
+.grid_container_servicios header #menu2 {
+  padding-left: 20px;
+}
+.grid_container_servicios main {
+  grid-area: main;
+  background-image: url(../img/portada_servicios.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid_container_servicios main h1 {
+  font-family: tiffanyscript;
+  font-size: 4rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.grid_container_servicios section {
+  grid-area: seccion;
+  display: flex;
+  flex-direction: column;
+}
+.grid_container_servicios section li img {
+  height: 200px;
+}
+.grid_container_servicios section #lista_servicios_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf9f7;
+  text-align: left;
+  padding: 150px;
+}
+.grid_container_servicios section #lista_servicios_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f1e9;
+  text-align: right;
+  padding: 150px;
+}
+.grid_container_servicios section h3 {
+  font-family: "Antonio", sans-serif;
+  font-size: 3.5rem;
+  color: black;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grid_container_servicios section p {
+  font-family: "Antonio", sans-serif;
+  color: #4b4b4b;
+  font-size: 2rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grid_container_servicios footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #4b4b4b;
+  height: 15vh;
+}
+.grid_container_servicios footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid_container_servicios footer .redes img {
+  height: 65px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 35px;
+}
+
+.grid_container_portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5 1fr);
+  grid-template-areas: "header" "main" "seccion_menu" "seccion_imagenes" "footer";
+}
+.grid_container_portfolio header {
+  grid-area: header;
+  width: 100%;
+  height: 10vh;
+  background-color: #faf9f7;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.grid_container_portfolio header .logo img {
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.grid_container_portfolio header .menu {
+  font-family: Antonio;
+  font-size: 2rem;
+  color: #4b4b4b;
+}
+.grid_container_portfolio header #menu2 {
+  padding-left: 20px;
+}
+.grid_container_portfolio main {
+  grid-area: main;
+  background-image: url(../img/portada_portfolio.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid_container_portfolio main h1 {
+  font-family: tiffanyscript;
+  font-size: 4rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.grid_container_portfolio .seccion_menu_portfolio {
+  grid-area: seccion_menu;
+  height: 100px;
+  background-color: #f4f1e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid_container_portfolio .seccion_menu_portfolio li {
+  font-family: "Antonio", sans-serif;
+  font-size: 3rem;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.grid_container_portfolio .seccion_imagenes_portfolio {
+  grid-area: seccion_imagenes;
+}
+.grid_container_portfolio .seccion_imagenes_portfolio img {
+  width: 100%;
+}
+.grid_container_portfolio .imagenes_portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  justify-items: center;
+}
+.grid_container_portfolio #exteriores {
+  margin-top: 5px;
+}
+.grid_container_portfolio #interiores {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.grid_container_portfolio footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #4b4b4b;
+  height: 15vh;
+}
+.grid_container_portfolio footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid_container_portfolio footer .redes img {
+  height: 65px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 35px;
+}
+
+.grid_container_cursos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4 1fr);
+  grid-template-areas: "header" "main" "seccion" "footer";
+}
+.grid_container_cursos header {
+  grid-area: header;
+  width: 100%;
+  height: 10vh;
+  background-color: #faf9f7;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.grid_container_cursos header .logo img {
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.grid_container_cursos header .menu {
+  font-family: Antonio;
+  font-size: 2rem;
+  color: #4b4b4b;
+}
+.grid_container_cursos header #menu2 {
+  padding-left: 20px;
+}
+.grid_container_cursos main {
+  grid-area: main;
+  background-image: url(../img/portada_cursos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid_container_cursos main h1 {
+  font-family: tiffanyscript;
+  font-size: 4rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.grid_container_cursos section {
+  grid-area: seccion;
+  display: flex;
+  flex-direction: column;
+}
+.grid_container_cursos section li img {
+  height: 200px;
+}
+.grid_container_cursos section #lista_servicios_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf9f7;
+  text-align: left;
+  padding: 150px;
+}
+.grid_container_cursos section #lista_servicios_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f1e9;
+  text-align: right;
+  padding: 150px;
+}
+.grid_container_cursos section h3 {
+  font-family: "Antonio", sans-serif;
+  font-size: 3.5rem;
+  color: black;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grid_container_cursos section p {
+  font-family: "Antonio", sans-serif;
+  color: #4b4b4b;
+  font-size: 2rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grid_container_cursos footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #4b4b4b;
+  height: 15vh;
+}
+.grid_container_cursos footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid_container_cursos footer .redes img {
+  height: 65px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 35px;
 }
 
 /* GENERALES */
@@ -249,6 +565,11 @@ html {
 
 li {
   list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=estilos.css.map */
