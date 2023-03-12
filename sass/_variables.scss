@@ -1,0 +1,55 @@
+/* FUENTES */
+
+@font-face {
+    font-family: julyit;
+    src: url(../fuentes/julyit.otf);
+}
+
+@font-face {
+    font-family: advent;
+    src: url(../fuentes/advent.otf);
+}
+
+@font-face {
+    font-family: tiffanyscript;
+    src: url(../fuentes/tiffanyscript.ttf);
+}
+
+
+/* COLORES BACKGROUND */
+
+$background_color_1: #faf9f7;
+$background_color_2: #f4f1e9;
+
+
+/* TITULO 1 */
+
+$font_h1: tiffanyscript;
+$size_h1: 4rem;
+$color_h1: black;
+$font_weight_h1: bold;
+$text_align_h1: center;
+
+
+/* HEADER - LOGO - NAVBAR */
+
+$width_logo: 150px;
+$margin_left_logo: 50px;
+$margin_top_logo: 10px;
+
+$height_header: 10vh;
+$width_header: 100%;
+
+$font_family_menu: Antonio;
+$font_size_menu: 2rem;
+$font_color_menu: #4b4b4b;
+$justified_content_menu: end;
+$align_items_menu: center;
+$padding_left_menu2: 20px;
+
+/* IMAGENES */
+
+$height_imagen_principal: 100%;
+$width_imagen_principal: 100%;
+
+

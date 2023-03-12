@@ -1,0 +1,77 @@
+@use './variables.scss';
+
+
+.grid_container_index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7 1fr);
+    grid-template-areas:
+        "header"
+        "main"
+        "seccion1"
+        "seccion2"
+        "seccion3"
+        "seccion4"
+        "footer";
+    header{
+        grid-area: header;
+        width: variables.$width_header;
+        height: variables.$height_header;
+        background-color: variables.$background_color_1;
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        .logo img{
+            width: variables.$width_logo;
+            margin-left: variables.$margin_left_logo;
+            margin-top: variables.$margin_top_logo;
+        }
+        .menu{
+            font-family: variables.$font_family_menu;
+            font-size: variables.$font_size_menu;
+            color: variables.$font_color_menu;
+            
+        }
+        #menu2{
+            padding-left: variables.$padding_left_menu2;
+        }
+    }
+    main{
+        grid-area: main;
+        background-image: url(../img/portada_home.jpg);
+        background-position: center;
+        background-size: cover;
+        height: variables.$height_imagen_principal;
+        width: variables.$width_imagen_principal;
+        .boton_flecha{
+
+        }
+    }
+    .seccion1{
+        grid-area: seccion1;
+    }
+    .seccion2{
+        grid-area: seccion2;
+    }
+    .seccion3{
+        grid-area: seccion3;
+    }
+    .seccion4{
+        grid-area: seccion4;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+    
+}
+
+
+h1{
+    font-family: variables.$font_h1;
+    font-size: variables.$size_h1;
+    color: variables.$color_h1;
+    font-weight: variables.$font_weight_h1;
+    text-align: center;
+}
