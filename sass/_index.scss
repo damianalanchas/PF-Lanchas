@@ -31,7 +31,6 @@
             font-family: variables.$font_family_menu;
             font-size: variables.$font_size_menu;
             color: variables.$font_color_menu;
-            
         }
         #menu2{
             padding-left: variables.$padding_left_menu2;
@@ -42,36 +41,182 @@
         background-image: url(../img/portada_home.jpg);
         background-position: center;
         background-size: cover;
-        height: variables.$height_imagen_principal;
-        width: variables.$width_imagen_principal;
-        .boton_flecha{
-
+        height: 100vh;
+        width: variables.$width_header;
+        h1{
+            font-family: variables.$font_h1;
+            font-size: variables.$size_h1;
+            color: variables.$color_h1;
+            font-weight: variables.$font_weight_h1;
+            text-align: center;
         }
+        .boton_flecha img{
+            height: 100px;
+        }
+        position: relative;
+        .boton_flecha{
+            position: absolute;
+            bottom: 120px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section{
+        width: variables.$width_header;
     }
     .seccion1{
         grid-area: seccion1;
+        background-color: variables.$background_color_2;
+        padding: 250px;
+        height: 100vh;
+        h2{
+            font-family: variables.$font_h2;
+            font-size: variables.$size_h2;
+            color: variables.$color_h2;
+            text-align: variables.$text_align_h2;
+        }
+        p{
+            font-family: variables.$font_p;
+            font-size: variables.$size_p1;
+            color: variables.$color_p;
+            text-align: center;
+            padding-top: 150px;
+            padding-left: 100px;
+            padding-right: 100px;        
+        }
     }
     .seccion2{
         grid-area: seccion2;
+        height: 100vh;
+        background-color: variables.$background_color_1;
+        text-align: center;
+        h2{
+            font-family: variables.$font_h2;
+            font-size: variables.$size_h2;
+            color: variables.$color_h2;
+            text-align: variables.$text_align_h2;
+        }
+        padding: 150px;
+        .home_lista_servicios img{
+            height: 100px;
+        }
+        .home_lista_servicios{
+            margin-top: 100px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        h3{
+            font-family: variables.$font_h3;
+            font-size: variables.$size_h3;
+            color: variables.$color_h3;
+            text-align: variables.$text_align_h3;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            font-family: variables.$font_p;
+            font-size: variables.$size_p2;
+            color: variables.$color_p;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .boton{
+            color: variables.$color_boton1;
+            background-color: variables.$background_color_boton1;
+            font-family: variables.$font_boton1;
+            font-size: variables.$size_boton1;
+            text-align: variables.$text_align_boton1;
+            width: variables.$width_boton1;
+            height: variables.$height_boton1;
+            border-radius: variables.$border_radius_boton1;
+            border: variables.$border_boton1;
+            margin-top: 100px;
+            &:hover{
+                background-color: variables.$background_color_hover_boton1;
+                color: variables.$color_font_hover_boton1;
+            }
+        }
     }
     .seccion3{
         grid-area: seccion3;
+        background-color: variables.$background_color_2;
+        text-align: center;
+        .seccion3_boton{
+            height: 15vh;
+        }
+        .boton{
+            color: variables.$color_boton1;
+            background-color: variables.$background_color_boton1;
+            font-family: variables.$font_boton1;
+            font-size: variables.$size_boton1;
+            text-align: variables.$text_align_boton1;
+            width: variables.$width_boton1;
+            height: variables.$height_boton1;
+            border-radius: variables.$border_radius_boton1;
+            border: variables.$border_boton1;
+            margin-top: 30px;
+            &:hover{
+                background-color: variables.$background_color_hover_boton1;
+                color: variables.$color_font_hover_boton1;
+            }
+        }
     }
     .seccion4{
         grid-area: seccion4;
+        background-image: url(../img/portada_home2.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: variables.$width_header;
+        h2{
+            font-family: variables.$font_h2;
+            font-size: variables.$size_h2;
+            color: variables.$color_h2;
+            text-align: center;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .boton{
+            color: variables.$color_boton1;
+            background-color: variables.$background_color_boton1;
+            font-family: variables.$font_boton1;
+            font-size: variables.$size_boton1;
+            text-align: variables.$text_align_boton1;
+            width: variables.$width_boton1;
+            height: variables.$height_boton1;
+            border-radius: variables.$border_radius_boton1;
+            border: variables.$border_boton1;
+            margin-top: 100px;
+            &:hover{
+                background-color: variables.$background_color_hover_boton1;
+                color: variables.$color_font_hover_boton1;
+            }
+        }
+        text-align: center;
     }
     footer{
         grid-area: footer;
+        width: variables.$width_header;
+        background-color: variables.$background_color_footer;
+        height: variables.$height_footer;
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: variables.$justify_content_footer;
+            align-items: center;
+        }
+        .redes img{
+            height: variables.$height_icono_redes;
+            padding-left: variables.$padding_left_icono_redes;
+            padding-right: variables.$padding_right_icono_redes;
+        }
     }
-
-    
-}
-
-
-h1{
-    font-family: variables.$font_h1;
-    font-size: variables.$size_h1;
-    color: variables.$color_h1;
-    font-weight: variables.$font_weight_h1;
-    text-align: center;
 }

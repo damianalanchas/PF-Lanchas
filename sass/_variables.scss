@@ -31,6 +31,30 @@ $font_weight_h1: bold;
 $text_align_h1: center;
 
 
+/* TITULO 2 */
+
+$font_h2: tiffanyscript;
+$size_h2: 4rem;
+$color_h2: black;
+$text_align_h2: center;
+
+/* TITULO 3 */
+
+$font_h3: 'Antonio', sans-serif;
+$size_h3: 2rem;
+$color_h3: black;
+$text_align_h3: center;
+
+
+/* PARRAFO */
+
+$font_p: 'Antonio', sans-serif;
+$size_p1: 25px;
+$size_p2: 15px;
+$color_p: #4b4b4b;
+
+
+
 /* HEADER - LOGO - NAVBAR */
 
 $width_logo: 150px;
@@ -49,7 +73,32 @@ $padding_left_menu2: 20px;
 
 /* IMAGENES */
 
-$height_imagen_principal: 100%;
+$height_imagen_principal: 100vh;
 $width_imagen_principal: 100%;
 
 
+/* BOTONES */
+
+$color_boton1: #f4f1e9;
+$background_color_boton1: #4b4b4b;
+$font_boton1: 'Antonio', sans-serif;
+$size_boton1: 2.5rem;
+$text_align_boton1: center;
+$width_boton1: 170px;
+$height_boton1: 60px;
+$border_radius_boton1: 15px;
+$border_boton1: none;
+$background_color_hover_boton1:#dbdbdb;
+$color_font_hover_boton1: #4b4b4b;
+
+
+
+/* FOOTER */
+
+$background_color_footer: #4b4b4b;
+$height_footer: 15vh;
+$justify_content_footer: center;
+$align_items_footer: center;
+$height_icono_redes: 65px;
+$padding_left_icono_redes: 25px;
+$padding_right_icono_redes: 25px;
