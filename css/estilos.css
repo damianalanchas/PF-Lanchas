@@ -234,6 +234,65 @@
   margin-top: 35px;
 }
 
+@media (max-width: 768px) {
+  .grid_container_index header {
+    width: 100vw;
+    height: 7vh;
+  }
+  .grid_container_index header .logo img {
+    width: 120px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 15px;
+  }
+  .grid_container_index main {
+    height: 100vh;
+    width: 100vw;
+  }
+  .grid_container_index main h1 {
+    font-size: 3.5rem;
+  }
+  .grid_container_index section {
+    width: 100vw;
+    justify-content: center;
+  }
+  .grid_container_index .seccion1 {
+    padding: 50px;
+  }
+  .grid_container_index .seccion1 h2 {
+    padding-top: 250px;
+  }
+  .grid_container_index .seccion1 p {
+    font-size: 30px;
+  }
+  .grid_container_index .seccion2 {
+    height: 100%;
+  }
+  .grid_container_index .seccion2 ul {
+    flex-direction: column;
+  }
+  .grid_container_index .seccion2 h3 {
+    font-size: 3rem;
+  }
+  .grid_container_index .seccion2 p {
+    font-size: 20px;
+  }
+  .grid_container_index .seccion2 .home_lista_servicios img {
+    height: 120px;
+  }
+  .grid_container_index .seccion2 li {
+    padding-top: 50px;
+  }
+  .grid_container_index .seccion3 .seccion3_boton {
+    height: 10vh;
+  }
+  .grid_container_index footer {
+    height: 10vh;
+  }
+  .grid_container_index footer .redes img {
+    height: 45px;
+  }
+}
 .grid_container_servicios {
   display: grid;
   grid-template-columns: 1fr;
