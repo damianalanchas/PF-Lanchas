@@ -1,2 +1,146 @@
 @use './variables.scss';
 
+.grid_container_contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5 1fr);
+    grid-template-areas: 
+        "header"
+        "main"
+        "seccion"
+        "formulario"
+        "footer";
+    header{
+        grid-area: header;
+        width: variables.$width_header;
+        height: variables.$height_header;
+        background-color: variables.$background_color_1;
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        .logo img{
+            width: variables.$width_logo;
+            margin-left: variables.$margin_left_logo;
+            margin-top: variables.$margin_top_logo;
+        }
+        .menu{
+            font-family: variables.$font_family_menu;
+            font-size: variables.$font_size_menu;
+            color: variables.$font_color_menu;
+        }
+        #menu2{
+            padding-left: variables.$padding_left_menu2;
+        }
+    }
+    main{
+        grid-area: main;
+        background-image: url(../img/portada_contacto.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: variables.$width_header;
+        h1{
+            font-family: variables.$font_h1;
+            font-size: variables.$size_h1;
+            color: variables.$color_h1;
+            font-weight: variables.$font_weight_h1;
+            text-align: center;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section{
+        width: variables.$width_header;
+        h2{
+            font-family: variables.$font_h2;
+            font-size: variables.$size_h2;
+            color: variables.$color_h2;
+            text-align: variables.$text_align_h2;
+        }
+    }
+    .seccion_contacto{
+        grid-area: seccion;
+        background-color: variables.$background_color_1;
+        padding: 250px;
+        height: 100vh;
+        p{
+            font-family: variables.$font_p;
+            font-size: variables.$size_p1;
+            color: variables.$color_p;
+            text-align: center;
+            padding-top: 150px;
+            padding-left: 100px;
+            padding-right: 100px;        
+        }
+    }
+    .formulario_contacto{
+        grid-area: formulario;
+        background-color: variables.$background_color_2;
+        height: 100vh;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        text-align: center; 
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        .texto_formulario{
+            background-color: #DBDBDB;
+            color: black;
+            font-family: variables.$font_p;
+            font-size: 2rem;
+            text-align:left;
+            padding-left: 20px;
+            width: 800px;
+            border-radius: 15px;
+            border: none;
+            margin-top: 20px;    
+        }
+        #box_1{
+            height: 50px;
+        }
+    
+        #box_2{
+            height: 200px;
+        }
+        .boton{
+            color: variables.$color_boton1;
+            background-color: variables.$background_color_boton1;
+            font-family: variables.$font_boton1;
+            font-size: variables.$size_boton1;
+            text-align: variables.$text_align_boton1;
+            width: variables.$width_boton1;
+            height: variables.$height_boton1;
+            border-radius: variables.$border_radius_boton1;
+            border: variables.$border_boton1;
+            margin-top: 50px;
+            &:hover{
+                background-color: variables.$background_color_hover_boton1;
+                color: variables.$color_font_hover_boton1;
+            }
+        }
+    }
+    footer{
+        grid-area: footer;
+        width: variables.$width_header;
+        background-color: variables.$background_color_footer;
+        height: variables.$height_footer;
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: variables.$justify_content_footer;
+            align-items: center;
+        }
+        .redes img{
+            height: variables.$height_icono_redes;
+            padding-left: variables.$padding_left_icono_redes;
+            padding-right: variables.$padding_right_icono_redes;
+            margin-top: variables.$margin_top_footer;
+        }
+    }
+}

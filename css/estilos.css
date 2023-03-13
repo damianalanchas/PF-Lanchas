@@ -417,6 +417,13 @@
   row-gap: 5px;
   justify-items: center;
 }
+.grid_container_portfolio .imagenes_portfolio img {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.grid_container_portfolio .imagenes_portfolio img:hover {
+  transform: scale(1.2);
+}
 .grid_container_portfolio #exteriores {
   margin-top: 5px;
 }
@@ -543,6 +550,145 @@
   align-items: center;
 }
 .grid_container_cursos footer .redes img {
+  height: 65px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 35px;
+}
+
+.grid_container_contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5 1fr);
+  grid-template-areas: "header" "main" "seccion" "formulario" "footer";
+}
+.grid_container_contacto header {
+  grid-area: header;
+  width: 100%;
+  height: 10vh;
+  background-color: #faf9f7;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.grid_container_contacto header .logo img {
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.grid_container_contacto header .menu {
+  font-family: Antonio;
+  font-size: 2rem;
+  color: #4b4b4b;
+}
+.grid_container_contacto header #menu2 {
+  padding-left: 20px;
+}
+.grid_container_contacto main {
+  grid-area: main;
+  background-image: url(../img/portada_contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid_container_contacto main h1 {
+  font-family: tiffanyscript;
+  font-size: 4rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.grid_container_contacto section {
+  width: 100%;
+}
+.grid_container_contacto section h2 {
+  font-family: tiffanyscript;
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+}
+.grid_container_contacto .seccion_contacto {
+  grid-area: seccion;
+  background-color: #faf9f7;
+  padding: 250px;
+  height: 100vh;
+}
+.grid_container_contacto .seccion_contacto p {
+  font-family: "Antonio", sans-serif;
+  font-size: 25px;
+  color: #4b4b4b;
+  text-align: center;
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grid_container_contacto .formulario_contacto {
+  grid-area: formulario;
+  background-color: #f4f1e9;
+  height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.grid_container_contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.grid_container_contacto form .texto_formulario {
+  background-color: #DBDBDB;
+  color: black;
+  font-family: "Antonio", sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 20px;
+  width: 800px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 20px;
+}
+.grid_container_contacto form #box_1 {
+  height: 50px;
+}
+.grid_container_contacto form #box_2 {
+  height: 200px;
+}
+.grid_container_contacto form .boton {
+  color: #f4f1e9;
+  background-color: #4b4b4b;
+  font-family: "Antonio", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 170px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 50px;
+}
+.grid_container_contacto form .boton:hover {
+  background-color: #dbdbdb;
+  color: #4b4b4b;
+}
+.grid_container_contacto footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #4b4b4b;
+  height: 15vh;
+}
+.grid_container_contacto footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid_container_contacto footer .redes img {
   height: 65px;
   padding-left: 25px;
   padding-right: 25px;

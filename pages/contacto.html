@@ -9,6 +9,8 @@
     <title>Camden Renders | Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- FUENTES -->
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
 
 <!-- BOOTSTRAP -->
@@ -20,7 +22,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="grid_container_contacto">
 
     <!-- MENU -->
 
@@ -51,51 +53,45 @@
     <!-- PRINCIPAL -->
 
         <main>
-            <div class="titulo1">
-                <h1>Contacto</h1>
-            </div>
-
-            <div class="imagen1">
-                <img src="../img/portada_contacto.jpg" alt="Exterior pileta">
-            </div>
+            <h1>Contacto</h1>
         </main>
 
 
     <!-- SECUNDARIO -->
 
-        <section class="seccion2">
+        <section class="seccion_contacto">
             <article>
-                <h2 class="titulo2">¿Tenés algún proyecto en mente?</h2>
-                <p class="texto5">Brindamos servicios de renderizado y animaciones 3D para arquitectos, diseñadores, ingenieros y desarrolladores inmobiliarios. Contanos tu idea y nosotros te ayudamos a materializarla.</p>
-                <p class="texto5">camden.renders@gmail.com</p>
+                <h2>¿Tenés algún proyecto en mente?</h2>
+                <p>Brindamos servicios de renderizado y animaciones 3D para arquitectos, diseñadores, ingenieros y desarrolladores inmobiliarios. Contanos tu idea y nosotros te ayudamos a materializarla.</p>
+                <p>camden.renders@gmail.com</p>
             </article>
         </section>
 
     
     <!-- FORMULARIO -->
 
-        <section class="section7">
+        <section class="formulario_contacto">
             <article>
-                <h2 class="titulo2" id="titulo_formulario">Hacenos tu consulta</h2>
+                <h2>Hacenos tu consulta</h2>
             </article>
-            <form action="" class="formulario2">
+            <form action="">
                 <label for=""></label>
-                <input type="text" placeholder="Nombre" required class="formulario" id="form_box">
+                <input type="text" placeholder="Nombre" required class="texto_formulario" id="box_1">
                 <label for=""></label>
-                <input type="tel" name="" placeholder="Teléfono" required class="formulario" id="form_box">
+                <input type="tel" name="" placeholder="Teléfono" required class="texto_formulario" id="box_1">
                 <label for=""></label>
-                <input type="email" name="" placeholder="E-mail" required class="formulario" id="form_box">
+                <input type="email" name="" placeholder="E-mail" required class="texto_formulario" id="box_1">
                 <label for=""></label>
-                <select name="País" class="formulario" id="form_box">
+                <select name="País" class="texto_formulario" id="box_1">
                     <option value="Pais">Pais</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Otro">Otro</option>
                 </select>
                 <label for=""></label>
-                <textarea name="" placeholder="Mensaje" cols="30" rows="10" class="formulario" id="form_mensaje"></textarea>
+                <textarea name="" placeholder="Mensaje" cols="30" rows="10" class="texto_formulario" id="box_2"></textarea>
                 <div> 
-                    <input type="button" value="Enviar" class="boton" id="boton_formulario">
-                    <input type="reset" value="Resetear"class="boton" id="boton_formulario">
+                    <input type="button" value="Enviar" class="boton">
+                    <input type="reset" value="Resetear"class="boton">
                 </div>
             </form>
         </section>
