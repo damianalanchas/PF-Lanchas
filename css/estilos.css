@@ -240,7 +240,7 @@
     height: 7vh;
   }
   .grid_container_index header .logo img {
-    width: 120px;
+    width: 100px;
     margin-left: 30px;
     margin-right: 100px;
     margin-top: 15px;
@@ -399,6 +399,54 @@
   margin-top: 35px;
 }
 
+@media (max-width: 768px) {
+  .grid_container_servicios header {
+    width: 100vw;
+    height: 7vh;
+  }
+  .grid_container_servicios header .logo img {
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 15px;
+  }
+  .grid_container_servicios main {
+    height: 100vh;
+    width: 100vw;
+  }
+  .grid_container_servicios main h1 {
+    font-size: 3.5rem;
+  }
+  .grid_container_servicios section {
+    width: 100vw;
+  }
+  .grid_container_servicios section li img {
+    height: 150px;
+  }
+  .grid_container_servicios section li {
+    height: 50vh;
+  }
+  .grid_container_servicios section #lista_servicios_left {
+    padding: 20px;
+  }
+  .grid_container_servicios section #lista_servicios_right {
+    padding: 20px;
+  }
+  .grid_container_servicios section h3 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .grid_container_servicios section p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .grid_container_servicios footer {
+    height: 10vh;
+  }
+  .grid_container_servicios footer .redes img {
+    height: 45px;
+  }
+}
 .grid_container_portfolio {
   display: grid;
   grid-template-columns: 1fr;
@@ -509,6 +557,25 @@
   margin-top: 35px;
 }
 
+@media (max-width: 768px) {
+  .grid_container_portfolio header {
+    width: 100vw;
+    height: 7vh;
+  }
+  .grid_container_portfolio header .logo img {
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 2px;
+  }
+  .grid_container_portfolio main {
+    height: 100vh;
+    width: 100vw;
+  }
+  .grid_container_portfolio main h1 {
+    font-size: 3.5rem;
+  }
+}
 .grid_container_cursos {
   display: grid;
   grid-template-columns: 1fr;
