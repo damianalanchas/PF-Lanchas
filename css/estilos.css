@@ -403,7 +403,7 @@
   text-align: right;
   padding: 150px;
 }
-.grid_container_servicios section h3 {
+.grid_container_servicios section h2 {
   font-family: "Antonio", sans-serif;
   font-size: 3.5rem;
   color: black;
@@ -470,7 +470,7 @@
   .grid_container_servicios section #lista_servicios_right {
     padding: 20px;
   }
-  .grid_container_servicios section h3 {
+  .grid_container_servicios section h2 {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 2.5rem;
@@ -712,7 +712,7 @@
   text-align: right;
   padding: 150px;
 }
-.grid_container_cursos section h3 {
+.grid_container_cursos section h2 {
   font-family: "Antonio", sans-serif;
   font-size: 3.5rem;
   color: black;
@@ -779,7 +779,7 @@
   .grid_container_cursos section #lista_servicios_right {
     padding: 15px;
   }
-  .grid_container_cursos section h3 {
+  .grid_container_cursos section h2 {
     font-size: 2.5rem;
     padding-left: 10px;
     padding-right: 10px;
