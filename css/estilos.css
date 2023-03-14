@@ -319,8 +319,8 @@
     height: 11vh;
   }
   .grid_container_index footer .redes img {
-    height: 40px;
-    margin-top: 20px;
+    height: 35px;
+    margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -478,8 +478,8 @@
     height: 11vh;
   }
   .grid_container_servicios footer .redes img {
-    height: 40px;
-    margin-top: 20px;
+    height: 35px;
+    margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -628,8 +628,8 @@
     height: 11vh;
   }
   .grid_container_portfolio footer .redes img {
-    height: 40px;
-    margin-top: 20px;
+    height: 35px;
+    margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -781,13 +781,14 @@
   .grid_container_cursos section p {
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 1.5rem;
   }
   .grid_container_cursos footer {
     height: 11vh;
   }
   .grid_container_cursos footer .redes img {
-    height: 40px;
-    margin-top: 20px;
+    height: 35px;
+    margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -953,7 +954,7 @@
     width: 100vw;
   }
   .grid_container_contacto section h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-top: 30px;
     line-height: 6rem;
   }
@@ -967,6 +968,7 @@
     padding-right: 30px;
   }
   .grid_container_contacto .formulario_contacto {
+    height: 100%;
     padding-top: 30px;
   }
   .grid_container_contacto form {
@@ -992,8 +994,8 @@
     height: 11vh;
   }
   .grid_container_contacto footer .redes img {
-    height: 40px;
-    margin-top: 20px;
+    height: 35px;
+    margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
   }
