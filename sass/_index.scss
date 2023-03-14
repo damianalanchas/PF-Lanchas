@@ -76,6 +76,7 @@
             font-size: variables.$size_h2;
             color: variables.$color_h2;
             text-align: variables.$text_align_h2;
+            line-height: 6rem;
         }
         p{
             font-family: variables.$font_p;
@@ -260,6 +261,8 @@
             p{
                 font-size: variables.$size_p1_r;
                 padding-top: 70px;
+                padding-left: 50px;
+                padding-right: 50px;
             }
         }
 
