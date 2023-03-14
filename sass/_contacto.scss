@@ -104,7 +104,6 @@
         #box_1{
             height: 50px;
         }
-    
         #box_2{
             height: 200px;
         }
@@ -166,6 +165,49 @@
             width: 100vw;
             h1{
                 font-size: variables.$size_h1_r;
+            }
+        }
+
+        section{
+            width: 100vw;
+            h2{
+                font-size: 3rem;
+                padding-top: 30px;
+                line-height: 6rem;
+            }
+        }
+
+        .seccion_contacto{
+            padding: 50px;
+            p{
+                font-size: variables.$size_p1_r;
+                padding-top: 50px;
+                padding-left: 30px;
+                padding-right: 30px; 
+            }
+        }
+
+        .formulario_contacto{
+            padding-top: 30px;
+        }
+
+        form{
+            margin-top: 30px;
+            .texto_formulario{
+            width: 300px;
+            font-size: 1.7rem;
+            border-radius: 10px;
+            }
+            #box_1{
+                height: 35px;
+            }
+            #box_2{
+                height: 170px;
+            }
+            .boton{
+                font-size: variables.$size_boton1_r;
+                width: variables.$width_boton1_r;
+                height: variables.$height_boton1_r;
             }
         }
 

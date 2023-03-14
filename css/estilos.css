@@ -251,31 +251,41 @@
   }
   .grid_container_index main h1 {
     font-size: 3rem;
+    line-height: 6rem;
   }
   .grid_container_index section {
     width: 100vw;
     justify-content: center;
   }
   .grid_container_index .seccion1 {
-    padding: 50px;
+    padding: 5px;
   }
   .grid_container_index .seccion1 h2 {
-    padding-top: 250px;
+    padding-top: 130px;
+    font-size: 3rem;
   }
   .grid_container_index .seccion1 p {
-    font-size: 30px;
+    font-size: 21px;
+    padding-top: 70px;
   }
   .grid_container_index .seccion2 {
     height: 100%;
+    padding: 5px;
+  }
+  .grid_container_index .seccion2 h2 {
+    padding-top: 100px;
+    font-size: 3rem;
   }
   .grid_container_index .seccion2 ul {
     flex-direction: column;
   }
   .grid_container_index .seccion2 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .grid_container_index .seccion2 p {
-    font-size: 20px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .grid_container_index .seccion2 .home_lista_servicios img {
     height: 120px;
@@ -283,11 +293,30 @@
   .grid_container_index .seccion2 li {
     padding-top: 50px;
   }
-  .grid_container_index .seccion3 .seccion3_boton {
-    height: 10vh;
+  .grid_container_index .seccion2 .boton {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    width: 120px;
+    height: 50px;
+  }
+  .grid_container_index .seccion3 .boton {
+    margin-top: 30px;
+    font-size: 2rem;
+    width: 120px;
+    height: 50px;
+  }
+  .grid_container_index .seccion4 h2 {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+  .grid_container_index .seccion4 .boton {
+    font-size: 2rem;
+    width: 120px;
+    height: 50px;
   }
   .grid_container_index footer {
-    height: 10vh;
+    height: 11vh;
   }
   .grid_container_index footer .redes img {
     height: 40px;
@@ -424,7 +453,7 @@
     width: 100vw;
   }
   .grid_container_servicios section li img {
-    height: 150px;
+    height: 100px;
   }
   .grid_container_servicios section li {
     height: 50vh;
@@ -436,15 +465,17 @@
     padding: 20px;
   }
   .grid_container_servicios section h3 {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2.5rem;
   }
   .grid_container_servicios section p {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
   }
   .grid_container_servicios footer {
-    height: 10vh;
+    height: 11vh;
   }
   .grid_container_servicios footer .redes img {
     height: 40px;
@@ -581,8 +612,20 @@
   .grid_container_portfolio main h1 {
     font-size: 3rem;
   }
+  .grid_container_portfolio .seccion_menu_portfolio {
+    height: 50px;
+  }
+  .grid_container_portfolio .seccion_menu_portfolio li {
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .grid_container_portfolio .imagenes_portfolio {
+    display: flex;
+    flex-direction: column;
+  }
   .grid_container_portfolio footer {
-    height: 10vh;
+    height: 11vh;
   }
   .grid_container_portfolio footer .redes img {
     height: 40px;
@@ -715,8 +758,32 @@
   .grid_container_cursos main h1 {
     font-size: 3rem;
   }
+  .grid_container_cursos section {
+    width: 100vw;
+  }
+  .grid_container_cursos section li img {
+    height: 100px;
+  }
+  .grid_container_cursos section li {
+    height: 50vh;
+  }
+  .grid_container_cursos section #lista_servicios_left {
+    padding: 15px;
+  }
+  .grid_container_cursos section #lista_servicios_right {
+    padding: 15px;
+  }
+  .grid_container_cursos section h3 {
+    font-size: 2.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .grid_container_cursos section p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .grid_container_cursos footer {
-    height: 10vh;
+    height: 11vh;
   }
   .grid_container_cursos footer .redes img {
     height: 40px;
@@ -882,8 +949,47 @@
   .grid_container_contacto main h1 {
     font-size: 3rem;
   }
+  .grid_container_contacto section {
+    width: 100vw;
+  }
+  .grid_container_contacto section h2 {
+    font-size: 3rem;
+    padding-top: 30px;
+    line-height: 6rem;
+  }
+  .grid_container_contacto .seccion_contacto {
+    padding: 50px;
+  }
+  .grid_container_contacto .seccion_contacto p {
+    font-size: 21px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .grid_container_contacto .formulario_contacto {
+    padding-top: 30px;
+  }
+  .grid_container_contacto form {
+    margin-top: 30px;
+  }
+  .grid_container_contacto form .texto_formulario {
+    width: 300px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+  }
+  .grid_container_contacto form #box_1 {
+    height: 35px;
+  }
+  .grid_container_contacto form #box_2 {
+    height: 170px;
+  }
+  .grid_container_contacto form .boton {
+    font-size: 2rem;
+    width: 120px;
+    height: 50px;
+  }
   .grid_container_contacto footer {
-    height: 10vh;
+    height: 11vh;
   }
   .grid_container_contacto footer .redes img {
     height: 40px;

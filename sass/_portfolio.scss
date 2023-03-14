@@ -139,6 +139,19 @@
             }
         }
 
+        .seccion_menu_portfolio{
+            height: 50px;
+            li{
+                font-size: 2rem;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        .imagenes_portfolio{
+            display: flex;
+            flex-direction: column;
+        }
+
         footer{
             height: variables.$height_footer_r;
             .redes img{
