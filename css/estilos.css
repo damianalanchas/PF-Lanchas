@@ -875,7 +875,7 @@
   grid-area: formulario;
   background-color: #f4f1e9;
   height: 100vh;
-  padding-top: 150px;
+  padding-top: 70px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -883,7 +883,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .grid_container_contacto form .texto_formulario {
   background-color: #DBDBDB;
