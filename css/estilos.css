@@ -237,20 +237,20 @@
 @media (max-width: 768px) {
   .grid_container_index header {
     width: 100vw;
-    height: 7vh;
+    height: 9vh;
   }
   .grid_container_index header .logo img {
     width: 100px;
     margin-left: 30px;
     margin-right: 100px;
-    margin-top: 15px;
+    margin-top: 3px;
   }
   .grid_container_index main {
     height: 100vh;
     width: 100vw;
   }
   .grid_container_index main h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .grid_container_index section {
     width: 100vw;
@@ -290,7 +290,10 @@
     height: 10vh;
   }
   .grid_container_index footer .redes img {
-    height: 45px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .grid_container_servicios {
@@ -402,20 +405,20 @@
 @media (max-width: 768px) {
   .grid_container_servicios header {
     width: 100vw;
-    height: 7vh;
+    height: 9vh;
   }
   .grid_container_servicios header .logo img {
     width: 100px;
     margin-left: 30px;
     margin-right: 100px;
-    margin-top: 15px;
+    margin-top: 3px;
   }
   .grid_container_servicios main {
     height: 100vh;
     width: 100vw;
   }
   .grid_container_servicios main h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .grid_container_servicios section {
     width: 100vw;
@@ -444,7 +447,10 @@
     height: 10vh;
   }
   .grid_container_servicios footer .redes img {
-    height: 45px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .grid_container_portfolio {
@@ -560,20 +566,29 @@
 @media (max-width: 768px) {
   .grid_container_portfolio header {
     width: 100vw;
-    height: 7vh;
+    height: 9vh;
   }
   .grid_container_portfolio header .logo img {
     width: 100px;
     margin-left: 30px;
     margin-right: 100px;
-    margin-top: 2px;
+    margin-top: 3px;
   }
   .grid_container_portfolio main {
     height: 100vh;
     width: 100vw;
   }
   .grid_container_portfolio main h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  .grid_container_portfolio footer {
+    height: 10vh;
+  }
+  .grid_container_portfolio footer .redes img {
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .grid_container_cursos {
@@ -682,6 +697,34 @@
   margin-top: 35px;
 }
 
+@media (max-width: 768px) {
+  .grid_container_cursos header {
+    width: 100vw;
+    height: 9vh;
+  }
+  .grid_container_cursos header .logo img {
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 3px;
+  }
+  .grid_container_cursos main {
+    height: 100vh;
+    width: 100vw;
+  }
+  .grid_container_cursos main h1 {
+    font-size: 3rem;
+  }
+  .grid_container_cursos footer {
+    height: 10vh;
+  }
+  .grid_container_cursos footer .redes img {
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .grid_container_contacto {
   display: grid;
   grid-template-columns: 1fr;
@@ -821,6 +864,34 @@
   margin-top: 35px;
 }
 
+@media (max-width: 768px) {
+  .grid_container_contacto header {
+    width: 100vw;
+    height: 9vh;
+  }
+  .grid_container_contacto header .logo img {
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 3px;
+  }
+  .grid_container_contacto main {
+    height: 100vh;
+    width: 100vw;
+  }
+  .grid_container_contacto main h1 {
+    font-size: 3rem;
+  }
+  .grid_container_contacto footer {
+    height: 10vh;
+  }
+  .grid_container_contacto footer .redes img {
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /* GENERALES */
 a {
   text-decoration: none;

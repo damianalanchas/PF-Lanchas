@@ -109,3 +109,39 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+
+    .grid_container_cursos{
+        
+        header{
+            width: variables.$width_header_r;
+            height: variables.$height_header_r;
+            .logo img{
+                width: variables.$width_logo_r;
+                margin-left: 30px;
+                margin-right: 100px;
+                margin-top: 3px;
+            }
+        }
+
+        main{
+            height: 100vh;
+            width: 100vw;
+            h1{
+                font-size: variables.$size_h1_r;
+            }
+        }
+
+        footer{
+            height: variables.$height_footer_r;
+            .redes img{
+                height: variables.$height_icono_redes_r;
+                margin-top: variables.$margin_top_footer_r;
+                padding-left: variables.$padding_left_icono_redes_r;
+                padding-right: variables.$padding_right_icono_redes_r;
+            }  
+        }
+    }
+}
