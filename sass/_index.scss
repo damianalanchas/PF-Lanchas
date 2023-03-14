@@ -245,6 +245,9 @@
                 font-size: variables.$size_h1_r;
                 line-height: 6rem;
             }
+            .boton_flecha img{
+                height: 80px;
+            }
         }
 
         section{
@@ -261,14 +264,14 @@
             p{
                 font-size: variables.$size_p1_r;
                 padding-top: 70px;
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-left: 30px;
+                padding-right: 30px;
             }
         }
 
         .seccion2{
             height: 100%;
-            padding: 5px;  
+            padding: 15px;  
             h2{
                 padding-top: 100px;
                 font-size: variables.$size_h2_r;
@@ -281,8 +284,8 @@
             }
             p{
                 font-size: variables.$size_p2_r;
-                padding-left: 5px;
-                padding-right: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
             .home_lista_servicios img{
                 height: 120px;
