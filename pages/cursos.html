@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudio de visualización arquitectónica que dedicado a la realización de renders, realidad virtual y diseño 3d para tus proyectos.">
+    <meta name="keywords" content="renders, visuailizacion arquitectonica, arquitectura, diseño 3d, renders interiores, renders exteriores, realidad virtual, visualizacio 3d, diseño, interiorismo, rendering, architectural visualization, interior design, servicios de renders, tour 360, recorrido virtual, recorrido arquitectonico, modelado en 3d, 3d modelling">
     <title>Camden Renders | Cursos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,9 @@
 <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
 
+<!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -27,24 +32,33 @@
 <!-- MENU -->
 
         <header>
-            <div class="logo">
-                <img src="../img/logo.png" alt="CAMDEN RENDERS">
-            </div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+            <nav class="navbar navbar-expand-md bg-body-tertiary menu">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand logo" href="./index.html">
+                        <img src="../img/logo.png" alt=" Logo Camden Renders">   
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse nav-link" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
-                            <a class="nav-link" href="./servicios.html" id="menu2">Servicios</a>
-                            <a class="nav-link" href="./portfolio.html" id="menu2">Portfolio</a>
-                            <a class="nav-link" href="./cursos.html" id="menu2">Cursos</a>
-                            <a class="nav-link" href="./contacto.html" id="menu2">Contacto</a>
-                        </div>
-                    </div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html" id="menu2">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/portfolio.html" id="menu2">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cursos.html" id="menu2">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html" id="menu2">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
                 </div>
             </nav>
         </header>
@@ -63,30 +77,30 @@
             <div>
                 <ul>
                     <li id="lista_servicios_left">
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-renderizado.png" alt="Icono renderizado">
                         </div>
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>3D RENDERING</h2>
                             <p>Aprende a trabajar correctamente la iluminación y los materiales para crear renders impactantes de proyectos arquitectónicos.</p>
                         </div>
                     </li>
                     
                     <li id="lista_servicios_right">
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>DISEÑO DE INTERIORES</h2>
                             <p>Aprende desde cero a realizar un proyecto de reforma desde la idea hasta su ejecución, traduciendo las necesidades del cliente en proyectos personalizados para viviendas o espacios de trabajo.</p>
                         </div>
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-interiores.png" alt="Icono diseño de interiores">
                         </div>
                     </li>
 
                     <li id="lista_servicios_left">
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-posprod.png" alt="Icono postproduccion">
                         </div>
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>POST-PRODUCCIÓN</h2>
                             <p>Crea imágenes arquitectónicas editadas con tu propio estilo. Aprende a editar y a post-producir los renders de tus proyectos arquitectónicos.</p>
                         </div>
@@ -126,6 +140,12 @@
     <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
    
+    <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
     </div>
 </body>
 

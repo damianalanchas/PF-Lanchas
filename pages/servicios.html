@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudio de visualización arquitectónica que dedicado a la realización de renders, realidad virtual y diseño 3d para tus proyectos.">
+    <meta name="keywords" content="renders, visuailizacion arquitectonica, arquitectura, diseño 3d, renders interiores, renders exteriores, realidad virtual, visualizacio 3d, diseño, interiorismo, rendering, architectural visualization, interior design, servicios de renders, tour 360, recorrido virtual, recorrido arquitectonico, modelado en 3d, 3d modelling">
     <title>Camden Renders | Servicios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,9 @@
 <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
 
+<!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,25 +31,35 @@
 <!-- MENU -->
    
     <div class="grid_container_servicios">
+        
         <header>
-            <div class="logo">
-                <img src="../img/logo.png" alt="CAMDEN RENDERS">
-            </div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+            <nav class="navbar navbar-expand-md bg-body-tertiary menu">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand logo" href="../index.html">
+                        <img src="../img/logo.png" alt=" Logo Camden Renders">   
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse nav-link" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
-                            <a class="nav-link" href="./servicios.html" id="menu2">Servicios</a>
-                            <a class="nav-link" href="./portfolio.html" id="menu2">Portfolio</a>
-                            <a class="nav-link" href="./cursos.html" id="menu2">Cursos</a>
-                            <a class="nav-link" href="./contacto.html" id="menu2">Contacto</a>
-                        </div>
-                    </div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html" id="menu2">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/portfolio.html" id="menu2">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cursos.html" id="menu2">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html" id="menu2">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
                 </div>
             </nav>
         </header>
@@ -63,31 +78,31 @@
             <div>
                 <ul>
                     <li id="lista_servicios_left">
-                        <div>
+                        <div  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-modelado.png" alt="Icono modelado">
                         </div>
-                        <div>
+                        <div  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>3D MODELLING</h2>
                             <p>El modelado en 3D nos permite crear un modelo tridiomensional para que puedas visualizar tu proyecto en todas sus dimensiones.</p>
                         </div>
                     </li>
                     
                     <li id="lista_servicios_right">
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>3D RENDERING</h2>
                             <p>Los renders fotorrealistas son una herramienta esencial que te permitirán visualizar tus proyectos.</p>
                             <p>Nosotros hacemos realidad tus ideas comunicando visualmente a través de estos renders. Mediante distintas imágenes se logra generar mayor claridad sobre el resultado final que tendrá tu proyecto.</p>
                         </div>
-                        <div>
-                            <img src="../img/icono-render.png" alt="Icono render">
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <img src="../img/icono-render.png" alt="Icono render" data-aos="zoom-in">
                         </div>
                     </li>
 
                     <li id="lista_servicios_left">
-                        <div>
+                        <div  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-video.png" alt="Icono video">
                         </div>
-                        <div>
+                        <div  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>ANIMACIONES 3D</h2>
                             <p>Movimiento, narrativa y emoción. Viví tu proyecto a través de un recorrido con recursos cinematográficos.</p>
                             <p>Es un formato digital ideal para compartir por redes sociales y publicidad que idealiza la atmósfera del proyecto.</p>
@@ -95,20 +110,20 @@
                     </li>
 
                     <li id="lista_servicios_right">
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>3D FLOOR PLANS</h2>
                             <p>Un concepto de plano amigable y de fácil entendimiento para el cliente. Perfecto para unidades inmobiliarias y diseño de viviendas.</p>
                         </div>
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-3d.png" alt="Icono 3d">
                         </div>
                     </li>
 
                     <li id="lista_servicios_left">
-                        <div>
+                        <div  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-360.png" alt="Icono 360">
                         </div>
-                        <div>
+                        <div  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>360° VIRTUAL TOUR</h2>
                             <p>Explorá todo a tu alrededor. El tour virtual te permitirá desplazarte dentro del espacio para que explores tu proyecto.</p>
                             <p>Es un formato digital ideal para compartir por redes sociales y publicidad que idealiza la atmósfera del proyecto.</p>
@@ -116,13 +131,12 @@
                     </li>
 
                     <li id="lista_servicios_right">
-
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h2>REAL TIME VR</h2>
                             <p>Interactúa con tu proyecto.</p>
                             <p>Una tendencia en Real Estate, la Realidad Virtual es una experiencia totalmente interactiva en la que vivís tu proyecto imaginado.</p>
                         </div>
-                        <div>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <img src="../img/icono-virtual.png" alt="Icono virtual">
                         </div>
                     </li>
@@ -160,8 +174,14 @@
     </div>
 
     <!-- BOOTSTRAP -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 
 </html>

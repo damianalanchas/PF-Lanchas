@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudio de visualización arquitectónica que dedicado a la realización de renders, realidad virtual y diseño 3d para tus proyectos.">
+    <meta name="keywords" content="renders, visuailizacion arquitectonica, arquitectura, diseño 3d, renders interiores, renders exteriores, realidad virtual, visualizacio 3d, diseño, interiorismo, rendering, architectural visualization, interior design, servicios de renders, tour 360, recorrido virtual, recorrido arquitectonico, modelado en 3d, 3d modelling">
     <title>Camden Renders | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,24 +31,33 @@
 <!-- MENU -->
 
         <header>
-            <div class="logo">
-                <img src="../img/logo.png" alt="CAMDEN RENDERS">
-            </div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+            <nav class="navbar navbar-expand-md bg-body-tertiary menu">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand logo" href="../index.html">
+                        <img src="../img/logo.png" alt=" Logo Camden Renders">   
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse nav-link" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
-                            <a class="nav-link" href="./servicios.html" id="menu2">Servicios</a>
-                            <a class="nav-link" href="./portfolio.html" id="menu2">Portfolio</a>
-                            <a class="nav-link" href="./cursos.html" id="menu2">Cursos</a>
-                            <a class="nav-link" href="./contacto.html" id="menu2">Contacto</a>
-                        </div>
-                    </div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html" id="menu2">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html" id="menu2">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/portfolio.html" id="menu2">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cursos.html" id="menu2">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html" id="menu2">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
                 </div>
             </nav>
         </header>
@@ -61,41 +72,203 @@
 
 <!-- SECUNDARIO -->
 
-        <section class="seccion_menu_portfolio">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#exteriores">Renders exteriores</a>
+        <section>
+            <ul class="seccion_menu_portfolio">
+                <li>
+                    <a href="#exteriores">Renders exteriores</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#interiores">Renders interiores</a>
+                <li>
+                    <a href="#interiores">Renders interiores</a>
+                </li>
+                <li>
+                    <a href="#animaciones">Animaciones 3D</a>
                 </li>
             </ul>
         </section>
 
         <section class="seccion_imagenes_portfolio">
-            <div class="imagenes_portfolio" id="exteriores">
-                <img src="../img/exterior1.jpg" alt="Exterior casa">
-                <img src="../img/exterior2.jpg" alt="Edificio">
-                <img src="../img/exterior3.jpg" alt="Quincho">
-                <img src="../img/exterior4.jpg" alt="fachada">
-                <img src="../img/exterior5.jpg" alt="exterior1">
-                <img src="../img/exterior6.jpg" alt="Acceso">
-                <img src="../img/exterior7.jpg" alt="Acceso">
-                <img src="../img/exterior8.jpg" alt="Acceso">
-                <img src="../img/exterior9.jpg" alt="Acceso">
-            </div>
-
-            <div class="imagenes_portfolio" id="interiores">
-                <img src="../img/interior1.jpg" alt="Acceso edificio">
-                <img src="../img/interior2.jpg" alt="Interior">
-                <img src="../img/interior3.jpg" alt="interior">
-                <img src="../img/interior4.jpg" alt="interior">
-                <img src="../img/interior5.jpg" alt="interior">
-                <img src="../img/interior6.jpg" alt="interior">
-                <img src="../img/interior7.jpg" alt="interior">
-                <img src="../img/interior8.jpg" alt="interior">
-                <img src="../img/interior9.jpg" alt="interior">
-            </div>
+            <ul class="imagenes_portfolio">
+                <li>
+                    <div>
+                        <img src="../img/exterior1.jpg" alt="Edificios" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior1.jpg" alt="Edificios">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior8.jpg" alt="Quincho exterior" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior8.jpg" alt="Quincho exterior">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior3.jpg" alt="Patio piscina" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior3.jpg" alt="Patio piscina">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior4.jpg" alt="Casa patio exterior" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior4.jpg" alt="Casa patio exterior">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior5.jpg" alt="Exterior casa" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior5.jpg" alt="Exterior casa">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior6.jpg" alt="Exterior duplex" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior6.jpg" alt="Exterior duplex">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior7.jpg" alt="Exterior duplex" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior7.jpg" alt="Exterior duplex">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior2.jpg" alt="Exterior duplex" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior2.jpg" alt="Exterior duplex">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/exterior9.jpg" alt="Exterior duplex" id="exteriores">  
+                    </div>
+                    <div class="efecto_imagenes_portfolio">
+                        <button class="botonmas_imagenes_portfolio" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../img/exterior9.jpg" alt="Exterior duplex">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
 
 

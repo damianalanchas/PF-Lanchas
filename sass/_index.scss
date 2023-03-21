@@ -17,8 +17,6 @@
         grid-area: header;
         width: variables.$width_header;
         height: variables.$height_header;
-        background-color: variables.$background_color_1;
-        display: flex;
         position: sticky;
         top: 0;
         z-index: 2;
@@ -31,6 +29,7 @@
             font-family: variables.$font_family_menu;
             font-size: variables.$font_size_menu;
             color: variables.$font_color_menu;
+            padding-right: variables.$padding-right_menu;
         }
         #menu2{
             padding-left: variables.$padding_left_menu2;
@@ -101,7 +100,7 @@
         }
         padding: 150px;
         .home_lista_servicios img{
-            height: 100px;
+            height: 150px;
         }
         .home_lista_servicios{
             margin-top: 100px;
@@ -124,8 +123,8 @@
             font-size: variables.$size_p2;
             color: variables.$color_p;
             text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
         .boton{
             color: variables.$color_boton1;

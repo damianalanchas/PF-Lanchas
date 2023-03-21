@@ -14,8 +14,6 @@
         grid-area: header;
         width: variables.$width_header;
         height: variables.$height_header;
-        background-color: variables.$background_color_1;
-        display: flex;
         position: sticky;
         top: 0;
         z-index: 2;
@@ -28,6 +26,7 @@
             font-family: variables.$font_family_menu;
             font-size: variables.$font_size_menu;
             color: variables.$font_color_menu;
+            padding-right: variables.$padding-right_menu;
         }
         #menu2{
             padding-left: variables.$padding_left_menu2;
@@ -57,6 +56,7 @@
         height: 100px;
         background-color: variables.$background_color_2;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         li{
@@ -64,7 +64,10 @@
             font-size: 3rem;
             color: variables.$color_h3;
             padding-left: 25px;
-            padding-right: 25px;   
+            padding-right: 25px;
+            a{
+                color: #4b4b4b;
+            } 
         }
     }
     .seccion_imagenes_portfolio{
@@ -80,16 +83,40 @@
         column-gap: 5px;
         row-gap: 5px;
         justify-items: center;
-        img{
+        li{
+            position: relative;
+            height: fit-content;
             cursor: pointer;
-            transition: all 0.5s; 
-            &:hover{
-                transform: scale(1.2);
-            }
         }
     }
+    .efecto_imagenes_portfolio{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #faf9f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+        opacity: 0;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .botonmas_imagenes_portfolio{
+        font-family: variables.$font_h3;
+        font-size: 5rem;
+        background-color: transparent;
+        border-radius: 20px;
+        border-color: #4b4b4b;
+        width: 50px;
+        height: 50px;
+        line-height: 0.5;
+    }
     #exteriores{
-        margin-top: 5px;
+        margin-top: 5px; 
     }
     #interiores{
         margin-top: 5px;
