@@ -20,13 +20,7 @@
 /* IMAGENES */
 /* BOTONES */
 /* FOOTER */
-.grid_container_index {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7 1fr);
-  grid-template-areas: "header" "main" "seccion1" "seccion2" "seccion3" "seccion4" "footer";
-}
-.grid_container_index header {
+header {
   grid-area: header;
   width: 100%;
   height: 10vh;
@@ -34,19 +28,72 @@
   top: 0;
   z-index: 2;
 }
-.grid_container_index header .logo img {
+header .logo img {
   width: 150px;
   margin-left: 50px;
   margin-top: 10px;
 }
-.grid_container_index header .menu {
+header .menu {
   font-family: Antonio;
   font-size: 2rem;
   color: #4b4b4b;
   padding-right: 50px;
 }
-.grid_container_index header #menu2 {
+header #menu2 {
   padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100vw;
+    height: 7vh;
+  }
+  header .logo img {
+    width: 130px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 3px;
+  }
+  header .menu {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #4b4b4b;
+  height: 13vh;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .redes img {
+  height: 55px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 8vh;
+  }
+  footer .redes img {
+    height: 35px;
+    margin-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.grid_container_index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7 1fr);
+  grid-template-areas: "header" "main" "seccion1" "seccion2" "seccion3" "seccion4" "footer";
 }
 .grid_container_index main {
   grid-area: main;
@@ -215,36 +262,8 @@
   background-color: #dbdbdb;
   color: #4b4b4b;
 }
-.grid_container_index footer {
-  grid-area: footer;
-  width: 100%;
-  background-color: #4b4b4b;
-  height: 15vh;
-}
-.grid_container_index footer .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.grid_container_index footer .redes img {
-  height: 65px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 35px;
-}
 
 @media (max-width: 768px) {
-  .grid_container_index header {
-    width: 100vw;
-    height: 5vh;
-  }
-  .grid_container_index header .logo img {
-    width: 100px;
-    margin-left: 30px;
-    margin-right: 100px;
-    margin-top: 3px;
-  }
   .grid_container_index main {
     height: 100vh;
     width: 100vw;
@@ -256,22 +275,28 @@
   .grid_container_index main .boton_flecha img {
     height: 80px;
   }
+  .grid_container_index main .boton_flecha {
+    bottom: 200px;
+  }
   .grid_container_index section {
     width: 100vw;
     justify-content: center;
   }
   .grid_container_index .seccion1 {
     padding: 5px;
+    display: flex;
+    align-items: center;
   }
   .grid_container_index .seccion1 h2 {
-    padding-top: 130px;
     font-size: 3rem;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .grid_container_index .seccion1 p {
     font-size: 20px;
     padding-top: 70px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .grid_container_index .seccion2 {
     height: 100%;
@@ -320,43 +345,12 @@
     width: 120px;
     height: 50px;
   }
-  .grid_container_index footer {
-    height: 11vh;
-  }
-  .grid_container_index footer .redes img {
-    height: 35px;
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 .grid_container_servicios {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4 1fr);
   grid-template-areas: "header" "main" "seccion" "footer";
-}
-.grid_container_servicios header {
-  grid-area: header;
-  width: 100%;
-  height: 10vh;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.grid_container_servicios header .logo img {
-  width: 150px;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-.grid_container_servicios header .menu {
-  font-family: Antonio;
-  font-size: 2rem;
-  color: #4b4b4b;
-  padding-right: 50px;
-}
-.grid_container_servicios header #menu2 {
-  padding-left: 20px;
 }
 .grid_container_servicios main {
   grid-area: main;
@@ -416,36 +410,8 @@
   padding-left: 100px;
   padding-right: 100px;
 }
-.grid_container_servicios footer {
-  grid-area: footer;
-  width: 100%;
-  background-color: #4b4b4b;
-  height: 15vh;
-}
-.grid_container_servicios footer .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.grid_container_servicios footer .redes img {
-  height: 65px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 35px;
-}
 
 @media (max-width: 768px) {
-  .grid_container_servicios header {
-    width: 100vw;
-    height: 5vh;
-  }
-  .grid_container_servicios header .logo img {
-    width: 100px;
-    margin-left: 30px;
-    margin-right: 100px;
-    margin-top: 3px;
-  }
   .grid_container_servicios main {
     height: 100vh;
     width: 100vw;
@@ -478,43 +444,12 @@
     padding-right: 20px;
     font-size: 1.5rem;
   }
-  .grid_container_servicios footer {
-    height: 11vh;
-  }
-  .grid_container_servicios footer .redes img {
-    height: 35px;
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 .grid_container_portfolio {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5 1fr);
   grid-template-areas: "header" "main" "seccion_menu" "seccion_imagenes" "footer";
-}
-.grid_container_portfolio header {
-  grid-area: header;
-  width: 100%;
-  height: 10vh;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.grid_container_portfolio header .logo img {
-  width: 150px;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-.grid_container_portfolio header .menu {
-  font-family: Antonio;
-  font-size: 2rem;
-  color: #4b4b4b;
-  padding-right: 50px;
-}
-.grid_container_portfolio header #menu2 {
-  padding-left: 20px;
 }
 .grid_container_portfolio main {
   grid-area: main;
@@ -606,36 +541,8 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.grid_container_portfolio footer {
-  grid-area: footer;
-  width: 100%;
-  background-color: #4b4b4b;
-  height: 15vh;
-}
-.grid_container_portfolio footer .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.grid_container_portfolio footer .redes img {
-  height: 65px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 35px;
-}
 
 @media (max-width: 768px) {
-  .grid_container_portfolio header {
-    width: 100vw;
-    height: 5vh;
-  }
-  .grid_container_portfolio header .logo img {
-    width: 100px;
-    margin-left: 30px;
-    margin-right: 100px;
-    margin-top: 3px;
-  }
   .grid_container_portfolio main {
     height: 100vh;
     width: 100vw;
@@ -647,22 +554,13 @@
     height: 50px;
   }
   .grid_container_portfolio .seccion_menu_portfolio li {
-    font-size: 2rem;
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 1.7rem;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .grid_container_portfolio .imagenes_portfolio {
     display: flex;
     flex-direction: column;
-  }
-  .grid_container_portfolio footer {
-    height: 11vh;
-  }
-  .grid_container_portfolio footer .redes img {
-    height: 35px;
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 .grid_container_cursos {
@@ -670,28 +568,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4 1fr);
   grid-template-areas: "header" "main" "seccion" "footer";
-}
-.grid_container_cursos header {
-  grid-area: header;
-  width: 100%;
-  height: 10vh;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.grid_container_cursos header .logo img {
-  width: 150px;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-.grid_container_cursos header .menu {
-  font-family: Antonio;
-  font-size: 2rem;
-  color: #4b4b4b;
-  padding-right: 50px;
-}
-.grid_container_cursos header #menu2 {
-  padding-left: 20px;
 }
 .grid_container_cursos main {
   grid-area: main;
@@ -751,36 +627,8 @@
   padding-left: 100px;
   padding-right: 100px;
 }
-.grid_container_cursos footer {
-  grid-area: footer;
-  width: 100%;
-  background-color: #4b4b4b;
-  height: 15vh;
-}
-.grid_container_cursos footer .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.grid_container_cursos footer .redes img {
-  height: 65px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 35px;
-}
 
 @media (max-width: 768px) {
-  .grid_container_cursos header {
-    width: 100vw;
-    height: 5vh;
-  }
-  .grid_container_cursos header .logo img {
-    width: 100px;
-    margin-left: 30px;
-    margin-right: 100px;
-    margin-top: 3px;
-  }
   .grid_container_cursos main {
     height: 100vh;
     width: 100vw;
@@ -813,43 +661,12 @@
     padding-right: 10px;
     font-size: 1.5rem;
   }
-  .grid_container_cursos footer {
-    height: 11vh;
-  }
-  .grid_container_cursos footer .redes img {
-    height: 35px;
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 .grid_container_contacto {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5 1fr);
   grid-template-areas: "header" "main" "seccion" "formulario" "footer";
-}
-.grid_container_contacto header {
-  grid-area: header;
-  width: 100%;
-  height: 10vh;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.grid_container_contacto header .logo img {
-  width: 150px;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-.grid_container_contacto header .menu {
-  font-family: Antonio;
-  font-size: 2rem;
-  color: #4b4b4b;
-  padding-right: 50px;
-}
-.grid_container_contacto header #menu2 {
-  padding-left: 20px;
 }
 .grid_container_contacto main {
   grid-area: main;
@@ -942,36 +759,8 @@
   background-color: #dbdbdb;
   color: #4b4b4b;
 }
-.grid_container_contacto footer {
-  grid-area: footer;
-  width: 100%;
-  background-color: #4b4b4b;
-  height: 15vh;
-}
-.grid_container_contacto footer .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.grid_container_contacto footer .redes img {
-  height: 65px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 35px;
-}
 
 @media (max-width: 768px) {
-  .grid_container_contacto header {
-    width: 100vw;
-    height: 5vh;
-  }
-  .grid_container_contacto header .logo img {
-    width: 100px;
-    margin-left: 30px;
-    margin-right: 100px;
-    margin-top: 3px;
-  }
   .grid_container_contacto main {
     height: 100vh;
     width: 100vw;
@@ -981,6 +770,8 @@
   }
   .grid_container_contacto section {
     width: 100vw;
+    display: flex;
+    align-items: center;
   }
   .grid_container_contacto section h2 {
     font-size: 2.5rem;
@@ -997,8 +788,13 @@
     padding-right: 30px;
   }
   .grid_container_contacto .formulario_contacto {
+    flex-direction: column;
     height: 100%;
     padding-top: 30px;
+  }
+  .grid_container_contacto .formulario_contacto article {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .grid_container_contacto form {
     margin-top: 30px;
@@ -1019,14 +815,18 @@
     width: 120px;
     height: 50px;
   }
-  .grid_container_contacto footer {
-    height: 11vh;
+}
+@media (max-width: 1200px) {
+  .grid_container_contacto section h2 {
+    line-height: 6rem;
   }
-  .grid_container_contacto footer .redes img {
-    height: 35px;
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+  .grid_container_contacto .seccion_contacto p {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grid_container_contacto .formulario_contacto {
+    padding-top: 120px;
   }
 }
 /* GENERALES */

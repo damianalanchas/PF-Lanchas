@@ -1,4 +1,6 @@
 @use './variables.scss';
+@use './header.scss';
+@use './footer.scss';
 
 .grid_container_contacto{
     display: grid;
@@ -10,28 +12,6 @@
         "seccion"
         "formulario"
         "footer";
-    header{
-        grid-area: header;
-        width: variables.$width_header;
-        height: variables.$height_header;
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        .logo img{
-            width: variables.$width_logo;
-            margin-left: variables.$margin_left_logo;
-            margin-top: variables.$margin_top_logo;
-        }
-        .menu{
-            font-family: variables.$font_family_menu;
-            font-size: variables.$font_size_menu;
-            color: variables.$font_color_menu;
-            padding-right: variables.$padding-right_menu;
-        }
-        #menu2{
-            padding-left: variables.$padding_left_menu2;
-        }
-    }
     main{
         grid-area: main;
         background-image: url(../img/portada_contacto.jpg);
@@ -58,7 +38,6 @@
             font-size: variables.$size_h2;
             color: variables.$color_h2;
             text-align: variables.$text_align_h2;
-        
         }
     }
     .seccion_contacto{
@@ -124,24 +103,6 @@
             }
         }
     }
-    footer{
-        grid-area: footer;
-        width: variables.$width_header;
-        background-color: variables.$background_color_footer;
-        height: variables.$height_footer;
-        .footer{
-            display: flex;
-            flex-direction: row;
-            justify-content: variables.$justify_content_footer;
-            align-items: center;
-        }
-        .redes img{
-            height: variables.$height_icono_redes;
-            padding-left: variables.$padding_left_icono_redes;
-            padding-right: variables.$padding_right_icono_redes;
-            margin-top: variables.$margin_top_footer;
-        }
-    }
 }
 
 
@@ -149,17 +110,6 @@
 
     .grid_container_contacto{
         
-        header{
-            width: variables.$width_header_r;
-            height: variables.$height_header_r;
-            .logo img{
-                width: variables.$width_logo_r;
-                margin-left: 30px;
-                margin-right: 100px;
-                margin-top: 3px;
-            }
-        }
-
         main{
             height: 100vh;
             width: 100vw;
@@ -170,6 +120,8 @@
 
         section{
             width: 100vw;
+            display: flex;
+            align-items: center;
             h2{
                 font-size: 2.5rem;
                 padding-top: 30px;
@@ -188,8 +140,13 @@
         }
 
         .formulario_contacto{
+            flex-direction: column;
             height: 100%;
             padding-top: 30px;
+            article{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         }
 
         form{
@@ -211,15 +168,28 @@
                 height: variables.$height_boton1_r;
             }
         }
-
-        footer{
-            height: variables.$height_footer_r;
-            .redes img{
-                height: variables.$height_icono_redes_r;
-                margin-top: variables.$margin_top_footer_r;
-                padding-left: variables.$padding_left_icono_redes_r;
-                padding-right: variables.$padding_right_icono_redes_r;
-            }  
-        }
     }
+}
+
+@media (max-width: 1200px) {
+
+    .grid_container_contacto{
+        section{
+            h2{
+                line-height: 6rem;
+            }
+        }
+        .seccion_contacto{
+            p{
+                padding-top: 70px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        .formulario_contacto{
+            padding-top: 120px;
+        }
+
+    }
+
 }

@@ -1,0 +1,35 @@
+@use './variables.scss';
+
+footer{
+    grid-area: footer;
+    width: variables.$width_header;
+    background-color: variables.$background_color_footer;
+    height: variables.$height_footer;
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: variables.$justify_content_footer;
+        align-items: center;
+    }
+    .redes img{
+        height: variables.$height_icono_redes;
+        padding-left: variables.$padding_left_icono_redes;
+        padding-right: variables.$padding_right_icono_redes;
+        margin-top: variables.$margin_top_footer;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    footer{
+        height: variables.$height_footer_r;
+        .redes img{
+            height: variables.$height_icono_redes_r;
+            margin-top: variables.$margin_top_footer_r;
+            padding-left: variables.$padding_left_icono_redes_r;
+            padding-right: variables.$padding_right_icono_redes_r;
+        }  
+    }
+}

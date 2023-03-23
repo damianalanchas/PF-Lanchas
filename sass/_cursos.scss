@@ -1,4 +1,6 @@
 @use './variables.scss';
+@use './header.scss';
+@use './footer.scss';
 
 .grid_container_cursos{
     display: grid;
@@ -9,28 +11,6 @@
         "main"
         "seccion"
         "footer";
-    header{
-        grid-area: header;
-        width: variables.$width_header;
-        height: variables.$height_header;
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        .logo img{
-            width: variables.$width_logo;
-            margin-left: variables.$margin_left_logo;
-            margin-top: variables.$margin_top_logo;
-        }
-        .menu{
-            font-family: variables.$font_family_menu;
-            font-size: variables.$font_size_menu;
-            color: variables.$font_color_menu;
-            padding-right: variables.$padding-right_menu;
-        }
-        #menu2{
-            padding-left: variables.$padding_left_menu2;
-        }
-    }
     main{
         grid-area: main;
         background-image: url(../img/portada_cursos.jpg);
@@ -89,24 +69,6 @@
             padding-right: 100px;
         }
     }
-    footer{
-        grid-area: footer;
-        width: variables.$width_header;
-        background-color: variables.$background_color_footer;
-        height: variables.$height_footer;
-        .footer{
-            display: flex;
-            flex-direction: row;
-            justify-content: variables.$justify_content_footer;
-            align-items: center;
-        }
-        .redes img{
-            height: variables.$height_icono_redes;
-            padding-left: variables.$padding_left_icono_redes;
-            padding-right: variables.$padding_right_icono_redes;
-            margin-top: variables.$margin_top_footer;
-        }
-    }
 }
 
 
@@ -114,17 +76,6 @@
 
     .grid_container_cursos{
         
-        header{
-            width: variables.$width_header_r;
-            height: variables.$height_header_r;
-            .logo img{
-                width: variables.$width_logo_r;
-                margin-left: 30px;
-                margin-right: 100px;
-                margin-top: 3px;
-            }
-        }
-
         main{
             height: 100vh;
             width: 100vw;
@@ -157,16 +108,6 @@
                 padding-right: 10px;
                 font-size: 1.5rem;
             }
-        }
-
-        footer{
-            height: variables.$height_footer_r;
-            .redes img{
-                height: variables.$height_icono_redes_r;
-                margin-top: variables.$margin_top_footer_r;
-                padding-left: variables.$padding_left_icono_redes_r;
-                padding-right: variables.$padding_right_icono_redes_r;
-            }  
         }
     }
 }
