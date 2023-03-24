@@ -459,6 +459,7 @@ footer .redes img {
   }
   .grid_container_servicios section li {
     height: 50vh;
+    overflow: hidden;
   }
   .grid_container_servicios section #lista_servicios_left {
     padding: 20px;
@@ -703,6 +704,7 @@ footer .redes img {
   }
   .grid_container_cursos section li {
     height: 50vh;
+    overflow: hidden;
   }
   .grid_container_cursos section #lista_servicios_left {
     padding: 15px;

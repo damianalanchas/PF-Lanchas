@@ -91,6 +91,7 @@
             }
             li{
                height: 50vh;
+               overflow: hidden;
             }
             #lista_servicios_left{
                 padding: 20px;  
@@ -111,6 +112,7 @@
         }
     }
 }
+
 
 @media (max-width: 320px) {
 
