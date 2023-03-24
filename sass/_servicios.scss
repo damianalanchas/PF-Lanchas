@@ -75,7 +75,7 @@
 @media (max-width: 768px) {
 
     .grid_container_servicios{
-        
+        width: 100vw;
         main{
             height: 100vh;
             width: 100vw;
@@ -112,4 +112,27 @@
     }
 }
 
+@media (max-width: 320px) {
 
+    .grid_container_servicios{
+        section{
+            li img{
+                height: 80px;
+             }
+             #lista_servicios_left{
+                padding: 10px;  
+            }
+            #lista_servicios_right{
+                padding: 10px;  
+            }
+            h2{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            p{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

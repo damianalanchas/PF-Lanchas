@@ -131,3 +131,16 @@
         }
     }
 }
+
+
+@media (max-width: 320px) {
+
+    .grid_container_portfolio{
+        .seccion_menu_portfolio{
+            height: 50px;
+            li{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

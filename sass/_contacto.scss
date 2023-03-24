@@ -152,9 +152,9 @@
         form{
             margin-top: 30px;
             .texto_formulario{
-            width: 300px;
-            font-size: 1.7rem;
-            border-radius: 10px;
+                width: 300px;
+                font-size: 1.7rem;
+                border-radius: 10px;
             }
             #box_1{
                 height: 35px;
@@ -170,6 +170,18 @@
         }
     }
 }
+
+
+@media (max-width: 320px) {
+    .grid_container_contacto{
+        form{
+            .texto_formulario{
+                width: 250px;
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1200px) {
 
@@ -189,7 +201,10 @@
         .formulario_contacto{
             padding-top: 120px;
         }
-
+        form{
+            .texto_formulario{
+                width: 600px;
+            }
+        }
     }
-
 }
