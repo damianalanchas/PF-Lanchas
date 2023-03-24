@@ -555,7 +555,7 @@ footer .redes img {
   row-gap: 5px;
   justify-items: center;
 }
-.grid_container_portfolio .imagenes_portfolio li {
+.grid_container_portfolio .imagenes_portfolio article {
   position: relative;
   height: fit-content;
   cursor: pointer;
@@ -613,6 +613,9 @@ footer .redes img {
   .grid_container_portfolio .imagenes_portfolio {
     display: flex;
     flex-direction: column;
+  }
+  .grid_container_portfolio .modal_cuadro {
+    margin-top: 300px;
   }
 }
 @media (max-width: 320px) {
@@ -893,9 +896,6 @@ footer .redes img {
   }
   .grid_container_contacto .formulario_contacto {
     padding-top: 120px;
-  }
-  .grid_container_contacto form .texto_formulario {
-    width: 600px;
   }
 }
 /* GENERALES */
